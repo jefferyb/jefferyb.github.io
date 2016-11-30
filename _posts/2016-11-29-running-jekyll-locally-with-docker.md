@@ -3,7 +3,7 @@ layout: post
 title:  "Running Jekyll locally with Docker"
 desc: "Running Jekyll locally with Docker"
 keywords: "docker,jekyll"
-date: 2016-10-31
+date: 2016-11-29
 categories: [Docker]
 tags: [docker]
 icon: fa-code

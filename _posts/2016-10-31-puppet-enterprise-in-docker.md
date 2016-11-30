@@ -23,7 +23,8 @@ In short:
 - Run the `create-a-puppet-enterprise-docker-image` script
 
 #### Bash
-```
+
+```bash
 $ git clone https://github.com/jefferyb/puppet-enterprise-in-docker.git
 $ mv puppet-enterprise-2016.4.0-ubuntu-14.04-amd64.tar.gz puppet-enterprise-in-docker
 $ cd puppet-enterprise-in-docker
@@ -33,13 +34,13 @@ $ ./create-a-puppet-enterprise-docker-image
 If all goes well, it should launch an instance and if you run `docker ps`, you should see a running container, `test-puppet-enterprise` with autosign turned on. 
 You can then run:
 
-```
+```bash
 $ docker run --rm --link test-puppet-enterprise:puppet puppet/puppet-agent-alpine
 ```
 
 and you should see something like:
 
-```
+```bash
 Info: Creating a new SSL key for 0b7a0a1c10ec
 Info: Caching certificate for ca
 Info: csr_attributes file loading from /etc/puppetlabs/puppet/csr_attributes.yaml
@@ -91,7 +92,7 @@ I used the [Ubuntu 14.04](https://hub.docker.com/_/ubuntu/) image to install, bu
 
 You can check by running `locale`
 
-```
+```bash
 root@0fb9e6958e1c:~# locale
 LANG=
 LANGUAGE=
@@ -112,7 +113,7 @@ LC_ALL=
 
 To set `locale` in the Dockerfile, do:
 
-```
+```bash
 RUN locale-gen en_US.UTF-8  
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
@@ -121,7 +122,7 @@ ENV LC_ALL en_US.UTF-8
 
 or run:
 
-```
+```bash
 root@0fb9e6958e1c:~# locale-gen en_US.UTF-8
 Generating locales...
   en_US.UTF-8... done
@@ -130,9 +131,10 @@ root@0fb9e6958e1c:~# export LANG=en_US.UTF-8
 root@0fb9e6958e1c:~# export LANGUAGE=en_US.UTF-8
 root@0fb9e6958e1c:~# export LC_ALL=en_US.UTF-8
 ```
+
 You can test it or check it again, and you should have something like this:
 
-```
+```bash
 root@0fb9e6958e1c:~# locale
 LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
@@ -160,7 +162,7 @@ Unpack the tarball by running `tar -xf <TARBALL_FILENAME>`
 
 Puppet Enterprise uses a pe.conf file to install in Text-mode installation
 
-```
+```bash
 cat > pe.conf <<'PECONF'
 {
   "console_admin_password": "ADMIN_PASSWORD",
@@ -170,7 +172,6 @@ cat > pe.conf <<'PECONF'
   ]
 }
 PECONF
-
 ```
 
 where `ADMIN_PASSWORD` is the password for the `admin` user,
@@ -180,12 +181,13 @@ and `PUPPET_MASTER_HOSTNAME` is the hostname you want to use, like puppet.exampl
 
 To install PE, cd into the unpacked folder and run:
 
-```
+```bash
 ./puppet-enterprise-installer -c <FULL PATH TO pe.conf>
 ```
 
 To complete the setup of the system, run:
-```
+
+```bash
 puppet agent -t
 ```
 
