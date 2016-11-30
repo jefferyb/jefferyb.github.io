@@ -1,0 +1,20 @@
+- name: Blog
+  href: '/blog/'
+
+- name: Ansible
+  href: '/ansible/'
+
+- name: Docker
+  href: '/docker/'
+
+- name: Linux
+  href: '/linux/'
+
+- name: Puppet
+  href: '/puppet/'
+
+# - name: Jenkins
+#   href: '/jenkins/'
+
+# - name: Life
+#   href: '/life/'

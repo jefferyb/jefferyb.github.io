@@ -1,0 +1,30 @@
+- name: 'Puppet Enterprise in Docker'
+  i18n: 'puppet-enterprise-in-docker'
+  url: '/jefferyb/puppet-enterprise-in-docker'
+  img: 'static/img/landing/puppet_logo.png'
+  desc: 'A script to create a Puppet Enterprise Docker Image'
+
+- name: 'Islandora'
+  i18n: 'islandora'
+  url: '/jefferyb/islandora-7.x-enterprise-ansible'
+  img: 'static/img/landing/islandora_logo.png'
+  desc: "Install and Configure, using Ansible, a Minimum Islandora Enterprise Stack, an open-source software framework designed to help institutions and organizations and their audiences collaboratively manage, and discover digital assets using a best-practices framework."
+
+- name: 'Islandora | Docker'
+  i18n: 'islandora'
+  url: '/jefferyb/islandora-7.x-docker'
+  img: 'static/img/landing/islandora_logo.png'
+  desc: "Dockerfiles used to build Islandora Enterprise Stack, an open-source software framework designed to help institutions and organizations and their audiences collaboratively manage, and discover digital assets using a best-practices framework."
+
+- name: 'Nextcloud'
+  i18n: 'nextcloud'
+  url: '/jefferyb/docker-nextcloud'
+  img: 'static/img/landing/nextcloud_logo.png'
+  desc: "Docker Image packaging for Nextcloud - A safe home for all your data Access & share your files, calendars, contacts, mail & more from any device, on your terms."
+
+- name: 'polymer-cli'
+  i18n: 'polymer-cli'
+  url: '/jefferyb/docker-polymer-cli'
+  img: 'static/img/landing/polymer_logo.png'
+  desc: "A Docker image containing a set of necessary tools for Polymer CLI Development"
+

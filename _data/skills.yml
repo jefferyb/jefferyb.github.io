@@ -1,0 +1,23 @@
+- name: Ansible
+  percentage: 85
+
+- name: Docker
+  percentage: 85
+
+- name: Git
+  percentage: 70
+
+- name: Jenkins
+  percentage: 85
+
+- name: Linux/Shell
+  percentage: 90
+
+- name: Project Management
+  percentage: 73
+
+- name: Puppet
+  percentage: 85
+
+- name: System Administration
+  percentage: 90

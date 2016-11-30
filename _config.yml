@@ -1,0 +1,79 @@
+# Welcome to Jekyll!
+
+# Website settings
+title: "Jeffery Bagirimvano"
+description: "Jeffery B.'s Blog"
+keywords: "Jeffery B.,Bagirimvano,blog,docker,jenkins,puppet,ansible"
+baseurl: "/"
+url: "https://jefferyb.github.io"
+
+# author
+author:
+  name: 'Jeffery Bagirimvano'
+  first_name: 'Jeffery'
+  last_name: 'Bagirimvano'
+  email: 'jeffery.rukundo@gmail.com'
+  google_username: 'JefferyBagirimvano'
+  github_username: 'jefferyb'
+  head_img: 'static/img/landing/Jeffery.jpg'
+  desc: 'I’m an Enterprise Application Administrator working at the University of Arkansas. Currently, my work involve working with Puppet, Jenkins, Docker, Ansible and many other tools. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I love making friends when I play sports, mostly soccer, and travel.'
+
+# sections
+sections:
+  - id: 'about-me'
+    i18n: 'nav.about_me'
+    name: 'About'
+    tpl: 'about.html'
+    css: ''
+
+  - id: 'blog'
+    i18n: 'nav.blog'
+    name: 'Blog'
+    tpl: 'blog.html'
+    css: 'testimonials navy-section'
+
+  - id: 'projects'
+    i18n: 'nav.projects'
+    name: 'Projects'
+    tpl: 'projects.html'
+    css: 'project'
+
+  - id: 'skills'
+    i18n: 'nav.skills'
+    name: 'Skills'
+    tpl: 'skills.html'
+    css: 'team'
+
+  - id: 'links'
+    i18n: 'nav.link'
+    name: 'Links'
+    tpl: 'links.html'
+    css: 'contact'
+
+  # - id: 'career'
+  #   i18n: 'nav.career'
+  #   name: 'Career'
+  #   tpl: 'career.html'
+  #   css: 'timeline'
+
+# blog img path
+img_path: '/static/img/blog'
+
+# Comments
+disqus:
+  name: jefferyb-github-io
+  public_key: 81aGPcFksR5dBu26hmNdVk4iWR0x4zXzSufYMlYYvKyje8Z1PywbT66rJUM9d8TL
+
+# Google Analytics
+ga:
+  id: UA-86575135-1
+
+# Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
