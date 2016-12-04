@@ -46,3 +46,13 @@ echo (Running mosh-server should give you a pid and a key to use if you want to 
 echo To connect to the server in the future, run this on your local machine:
 echo   $ mosh --server="LD_LIBRARY_PATH=$PREFIX/lib $PREFIX/bin/mosh-server" $USER@$(hostname -f)
 ```
+
+I added this bellow in my ~/.bashrc && ~/.bash_profile
+
+```bash
+# For mosh
+export PATH=$HOME/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/lib
+```
+
+which allowed me to just do `mosh user@my.dreamhost.com` without the libprotobuf.so.11 library problem...
