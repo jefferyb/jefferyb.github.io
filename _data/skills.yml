@@ -10,6 +10,9 @@
 - name: Jenkins
   percentage: 85
 
+- name: OpenShift / Kubernetes
+  percentage: 85
+
 - name: Linux/Shell
   percentage: 90
 

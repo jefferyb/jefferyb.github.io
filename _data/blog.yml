@@ -1,6 +1,9 @@
 - name: Blog
   href: '/blog/'
 
+- name: OpenShift/K8S
+  href: '/openshift/'
+
 - name: Ansible
   href: '/ansible/'
 
