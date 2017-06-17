@@ -63,6 +63,7 @@ In short on Linux:
                    --host-config-dir='/opt/origin/openshift.local.config' \
                    --host-data-dir='/opt/origin/openshift.local.data' \
                    --host-volumes-dir='/opt/origin/openshift.local.volumes' \
+                   --host-pv-dir='/opt/origin/openshift.local.pv' \
                    --use-existing-config
    ```
    You can set `--public-hostname` with your hostname or IP Address. I used `$(ip route get 1 | awk '{print $NF;exit}')` to get the IP address there...
