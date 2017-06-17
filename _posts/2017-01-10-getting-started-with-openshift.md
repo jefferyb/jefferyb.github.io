@@ -25,7 +25,7 @@ In short on Linux:
 
 1. Install Docker with your platform's package manager.
 2. Configure the Docker daemon with an insecure registry parameter of `172.30.0.0/16`
-   - In RHEL and Fedora, edit the `/etc/sysconfig/docker` file and add or uncomment the following line:
+   - On RHEL and Fedora, edit the `/etc/sysconfig/docker` file and add or uncomment the following line:
      ```
      INSECURE_REGISTRY='--insecure-registry 172.30.0.0/16'
      ```
@@ -33,6 +33,17 @@ In short on Linux:
    - After editing the config, restart the Docker daemon.
      ```
      $ sudo systemctl restart docker
+     ```
+
+   - On Ubuntu, edit `/etc/systemd/system/multi-user.target.wants/docker.service`, find `/usr/bin/dockerd -H fd://` and replace it with:
+     ```
+     /usr/bin/dockerd --insecure-registry 172.30.0.0/16 -H fd://
+     ```
+
+   - After editing the config, restart the Docker daemon.
+     ```
+     $ sudo systemctl daemon-reload
+     $ systemctl restart docker
      ```
 
 3. Download the Linux `oc` binary from
